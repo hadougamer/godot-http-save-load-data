@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Game Test API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "up_database": "node_modules/.bin/sequelize db:migrate",
+    "down_database": "node_modules/.bin/sequelize db:migrate:undo:all",
+    "status_database": "node_modules/.bin/sequelize db:migrate:status",
+    "up_seed": "node_modules/.bin/sequelize db:seed:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HadouTV",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.2"
+  }
+}
